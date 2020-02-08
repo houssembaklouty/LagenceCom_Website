@@ -1,4 +1,4 @@
-@extends('layouts/master', ['title' => 'Référencement SEO Tunisie'])
+@extends('layouts/master', ['title' => $title])
 
 @section('content')
 

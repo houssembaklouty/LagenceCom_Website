@@ -1,4 +1,4 @@
-@extends('layouts/master', ['title' => 'Photographie'])
+@extends('layouts/master', ['title' => $title])
 
 @section('content')
 

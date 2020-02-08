@@ -1,4 +1,4 @@
-@extends('layouts/master', ['title' => 'Identité visuelle'])
+@extends('layouts/master', ['title' => $title])
 
 @section('content')
 

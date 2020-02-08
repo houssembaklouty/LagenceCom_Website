@@ -1,4 +1,4 @@
-@extends('layouts/master', ['title' => 'Community Management Tunisie'])
+@extends('layouts/master', ['title' => $title])
 
 @section('content')
 
@@ -42,8 +42,7 @@
                                     <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 5px; text-align: justify;">
                                         <div class="gdlr-core-text-box-item-content" style="font-size: 15px;">
                                             <p>
-                                                « <a href="{{ route('root_path') }}">L’@gence Com</a> » vous accompagne dans <b>l’intégration du <a href="{{ route('root_path') }}" title="agence community management">community management</a> </b> dans votre entreprise, afin qu’il soutienne
-                                                votre stratégie de marque.                                                
+                                                « <a href="{{ route('root_path') }}">L’@gence Com</a> » vous accompagne dans <b>l’intégration du <a href="{{ route('root_path') }}" title="agence community management">community management</a> </b> dans votre entreprise, afin qu’il soutienne votre stratégie de marque.                                                
                                             </p>
                                         </div>
                                     </div>

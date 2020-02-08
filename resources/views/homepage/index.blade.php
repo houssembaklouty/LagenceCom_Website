@@ -1,4 +1,4 @@
-@extends('layouts/master', ['title' => 'Agence de conseil, création et communication Web en Tunisie'])
+@extends('layouts/master', ['title' => $title])
 
 @section('content')
 
@@ -18,7 +18,7 @@
                     <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first">
                         <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 250px 0px 250px 0px;" data-sync-height="video-bg-height" data-sync-height-center>
                             <div class="gdlr-core-pbf-background-wrap" style="background-color: #161616 ;">
-                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(/assets/images/présentation.jpg);opacity: 0.38;background-size: cover;background-position: center;" data-parallax-speed="0.1"></div>
+                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(/assets/images/presentation.jpg);opacity: 0.38;background-size: cover;background-position: center;" data-parallax-speed="0.1"></div>
                             </div>
                             <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
                                 <div class="gdlr-core-pbf-element">

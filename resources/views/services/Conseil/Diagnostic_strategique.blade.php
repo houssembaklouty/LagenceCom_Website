@@ -1,5 +1,4 @@
-@extends('layouts/master', ['title' => 'Diagnostic strategique'])
-
+@extends('layouts/master', ['title' => $title])
 
 @section('content')
 

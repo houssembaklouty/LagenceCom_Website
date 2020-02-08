@@ -1,4 +1,4 @@
-@extends('layouts/master', ['title' => 'Création Site Web en Tunisie'])
+@extends('layouts/master', ['title' => $title])
 
 @section('content')
 

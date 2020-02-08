@@ -59,7 +59,7 @@
                                     <div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
                                         <div role="form" class="wpcf7" id="wpcf7-f1979-p1977-o1" dir="ltr">
 
-                                            <form id="contact_form" method="post" enctype="multipart/form-data" novalidate >
+                                            <form id="contact_form" method="post" enctype="multipart/form-data">
 
                                                 @csrf
 
@@ -69,7 +69,7 @@
                                                         <p>Nom et Prénom (obligatoire)
                                                             <br>
                                                             <span class="wpcf7-form-control-wrap your-name">
-                                                                <input id="name" type="text" name="name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+                                                                <input id="name" type="text" name="name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" required aria-invalid="false">
                                                             </span> 
                                                         </p>
                                                     </div>
@@ -199,90 +199,97 @@
 @endsection
 
 @section('scripts')
-    <script type="text/javascript">
 
-        jQuery(document).ready(function($) {
-            //console.log('Load Done!');
 
-            jQuery(document).on('click','#submit_contact_button', function(event){
-                $('#msg').find('.alert').remove();
+<script type="text/javascript">
+    jQuery(document).ready(function(t){jQuery(document).on("click","#submit_contact_button",function(e){t("#msg").find(".alert").remove();var n=t("#name").val(),a=t("#email").val(),s=t("#message").val();if(""!=n&&""!=a){t(".loading_spinner").css("display","inline-block"),t.ajaxSetup({headers:{"X-CSRF-TOKEN":t('meta[name="csrf-token"]').attr("content")}});var r={_token:t("input[name=_token]").val(),name:n,email:a,message:s};t.ajax({type:"POST",url:"{{ route('contact.store') }}",data:r,success:function(e,n){t(".loading_spinner").css("display","none"),t("#contact_form").each(function(){this.reset()}),t(".centered_spinner").css("display","none"),t("#msg").find(".alert").remove(),t("<div class='alert alert-success text-center' style='color: #5cb85c;'> <i class='fa fa-info-circle'></i> "+e.success+"</div>").appendTo("#msg")},error:function(e,n,a){t(".loading_spinner").css("display","none"),t("#msg").find(".alert").remove(),t("#msg").html(""),t.each(e.responseJSON.errors,function(e,n){t("#msg").append('<div class="alert alert-danger" style="color: #bb2124;"> <i class="fa fa-info-circle"></i> '+n+"</div")})}})}else console.log("error"),t("#msg").find(".alert").remove(),t("<div class='alert alert-danger text-center' style='color: #bb2124;'> <i class='fa fa-info-circle'></i> Vous devez remplir le formulaire.</div>").appendTo("#msg")})});
+</script>
 
-                //console.log('submit_contact_button -> Done !');
+{{--
+<script type="text/javascript">
 
-                var name = $("#name").val(),
-                    email = $("#email").val(),
-                    message = $("#message").val()
-                ;
+    jQuery(document).ready(function($) {
+        //console.log('Load Done!');
 
-                //if(true)
-                if(name != '' && email != '')
-                {
-                    $(".loading_spinner").css("display", "inline-block");
+        jQuery(document).on('click','#submit_contact_button', function(event){
+            $('#msg').find('.alert').remove();
 
-                    $.ajaxSetup({
-                        headers: {
-                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                        }
-                    });
+            //console.log('submit_contact_button -> Done !');
 
-                    var PostData = {
-                      '_token' : $("input[name=_token]").val(),
-                      'name': name,
-                      'email' : email,
-                      'message' : message
-                    };
+            var name = $("#name").val(),
+                email = $("#email").val(),
+                message = $("#message").val()
+            ;
 
-                    //console.log(PostData);
+            //if(true)
+            if(name != '' && email != '')
+            {
+                $(".loading_spinner").css("display", "inline-block");
 
-                    $.ajax({
-                      type: 'POST',
-                      url: "{{ route('contact.store') }}",
-                      data: PostData,
-                      success: function(data, result){
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
 
+                var PostData = {
+                  '_token' : $("input[name=_token]").val(),
+                  'name': name,
+                  'email' : email,
+                  'message' : message
+                };
+
+                //console.log(PostData);
+
+                $.ajax({
+                  type: 'POST',
+                  url: "{{ route('contact.store') }}",
+                  data: PostData,
+                  success: function(data, result){
+
+                    $(".loading_spinner").css("display", "none");
+
+                    $( '#contact_form' ).each(function(){ this.reset(); });
+                    
+                    //console.log('data= ',data);
+
+                    $(".centered_spinner").css("display", "none");
+
+                    $('#msg').find('.alert').remove();
+                    $("<div class='alert alert-success text-center' style='color: #5cb85c;'> <i class='fa fa-info-circle'></i> "+ data.success +"</div>").appendTo('#msg');
+
+                    },
+
+                    error : function(resultat, statut, erreur){
                         $(".loading_spinner").css("display", "none");
 
-                        $( '#contact_form' ).each(function(){ this.reset(); });
-                        
-                        //console.log('data= ',data);
-
-                        $(".centered_spinner").css("display", "none");
-
                         $('#msg').find('.alert').remove();
-                        $("<div class='alert alert-success text-center' style='color: #5cb85c;'> <i class='fa fa-info-circle'></i> "+ data.success +"</div>").appendTo('#msg');
 
-                        },
+                        $('#msg').html('');
+                          $.each(resultat.responseJSON.errors, function(key,value) {
+                            $('#msg').append('<div class="alert alert-danger" style="color: #bb2124;"> <i class="fa fa-info-circle"></i> '+value+'</div');
+                        });
 
-                        error : function(resultat, statut, erreur){
-                            $(".loading_spinner").css("display", "none");
+                        /*
 
-                            $('#msg').find('.alert').remove();
+                        console.log('resultat= ',resultat);
+                        console.log('statut= ',statut);
+                        console.log('erreur= ',erreur);
 
-                            $('#msg').html('');
-                              $.each(resultat.responseJSON.errors, function(key,value) {
-                                $('#msg').append('<div class="alert alert-danger" style="color: #bb2124;"> <i class="fa fa-info-circle"></i> '+value+'</div');
-                            });
+                        */
+                    }
+                });
+            }
 
-                            /*
+            else
+            {
+                console.log('error');
+                $('#msg').find('.alert').remove();
 
-                            console.log('resultat= ',resultat);
-                            console.log('statut= ',statut);
-                            console.log('erreur= ',erreur);
-
-                            */
-                        }
-                    });
-                }
-
-                else
-                {
-                    console.log('error');
-                    $('#msg').find('.alert').remove();
-
-                    $("<div class='alert alert-danger text-center' style='color: #bb2124;'> <i class='fa fa-info-circle'></i> "+'Vous devez remplir le formulaire.'+"</div>").appendTo('#msg');
-
-                }
-            });
+                $("<div class='alert alert-danger text-center' style='color: #bb2124;'> <i class='fa fa-info-circle'></i> "+'Vous devez remplir le formulaire.'+"</div>").appendTo('#msg');
+            }
         });
-        </script>
+    });
+</script>
+ --}}
 @endsection

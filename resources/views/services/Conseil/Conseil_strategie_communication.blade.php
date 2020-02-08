@@ -1,5 +1,4 @@
-@extends('layouts/master', ['title' => 'Conseil strategie communication'])
-
+@extends('layouts/master', ['title' => $title])
 
 @section('content')
 

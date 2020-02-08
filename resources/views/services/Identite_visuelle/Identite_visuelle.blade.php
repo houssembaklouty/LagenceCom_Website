@@ -42,7 +42,7 @@
                                     <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 5px; text-align: justify;">
                                         <div class="gdlr-core-text-box-item-content" style="font-size: 15px;">
                                             <p>
-                                                « <a href="{{ route('root_path') }}">L’@gence Com</a> » « L’@gence Com » pense, conceptualise et réalise l’essence graphique de votre entreprise.
+                                                « <a href="{{ route('root_path') }}">L’@gence Com</a> » pense, conceptualise et réalise l’essence graphique de votre entreprise.
                                             </p>
                                         </div>
                                     </div>

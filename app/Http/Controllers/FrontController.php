@@ -18,10 +18,12 @@ class FrontController extends Controller
 		    ['name' => 'Autre',]
 		];
 
+		$title = 'Agence de conseil, création et communication Web en Tunisie';
+
 		$description = "L’@gence Com accompagne les professionnels & les entreprises dans leurs projets de communication globale : conseil, création, internet, marketing digital, photo & vidéo.";
 		
 		$keywords = "keywords1, keywords2, keywords3";
 
-	    return view('homepage/index', compact('objects', 'description', 'keywords'));
+	    return view('homepage/index', compact('objects', 'title', 'description', 'keywords'));
 	}	
 }

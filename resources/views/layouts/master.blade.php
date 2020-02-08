@@ -14,8 +14,8 @@
     <meta name="description" content="{!! isset($description) ? $description : '' !!}">
 
     <!-- Twitter -->
-    <meta name="twitter:site" content="" />
-    <meta name="twitter:creator" content="" />
+    <meta name="twitter:site" content="{{ url()->current() }}" />
+    <meta name="twitter:creator" content="L’agence Com" />
     <meta name="twitter:description" property="og:description" content="{!! isset($description) ? $description : '' !!}" />
     <meta name="twitter:domain" content="{{ env('APP_URL') }}" />
     <meta name="twitter:image" content="{{ url('assets/upload/logo_laganceCom.png') }}" />
@@ -23,7 +23,7 @@
     <meta name="keywords" content="{{ isset($keywords) ? $keywords : '' }}" />
 
     <!-- og -->
-    <meta property="og:site_name" content="{{ env('APP_URL') }}" />
+    <meta property="og:site_name" content="L’agence Com" />
     <meta property="og:title" content="{!! isset($title) ? $title . ' |' : '' !!} L’agence Com" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:description" content="{!! isset($description) ? $description : '' !!}" />
@@ -45,6 +45,9 @@
     <link rel='stylesheet' href="{{ asset('assets/plugins/goodlayers-core/plugins/combine/style.css') }}" type='text/css' media='all'>
     <link rel='stylesheet' href="{{ asset('assets/plugins/goodlayers-core/include/css/page-builder.css') }}" type='text/css' media='all'>
     <link rel='stylesheet' href="{{ asset('assets/css/font-awesome.css') }}" type='text/css' media='all'>
+
+    <script type='text/javascript' src="{{ asset('assets/js/jquery/jquery.js') }}"></script>
+    
 </head>
 
 <body data-rsssl=1 
@@ -73,7 +76,6 @@
         <i class="fa fa-angle-up" ></i>
     </a>
 
-    <script type='text/javascript' src="{{ asset('assets/js/jquery/jquery.js') }}"></script>
     <script type='text/javascript' src="{{ asset('assets/js/jquery/jquery-migrate.min.js') }}"></script>
     <script type='text/javascript' src="{{ asset('assets/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js') }}"></script>
     <script type='text/javascript' src="{{ asset('assets/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js') }}"></script>
