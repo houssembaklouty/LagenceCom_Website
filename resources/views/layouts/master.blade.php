@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="author" content="L’agence Com - Web developer BAKLOUTI Houssem">
     <meta name="copyright" content="Copyright © 2018/2019 - All Rights Reserved - L’agence Com - Web developer BAKLOUTI Houssem." />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{!! isset($title) ? $title . ' |' : '' !!} L’agence Com</title>
 
-
+    {{--
     <meta name="description" content="{!! isset($description) ? $description : '' !!}">
 
     <!-- Twitter -->
@@ -20,7 +20,7 @@
     <meta name="twitter:domain" content="{{ env('APP_URL') }}" />
     <meta name="twitter:image" content="{{ url('assets/upload/logo_laganceCom.png') }}" />
 
-    <meta name="keywords" content="{{ isset($keywords) ? $keywords : '' }}" />
+    @if($keywords)<meta name="keywords" content="{{ isset($keywords) ? $keywords : '' }}" />@endif
 
     <!-- og -->
     <meta property="og:site_name" content="L’agence Com" />
@@ -34,6 +34,8 @@
 
     <script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/www.lagence-com.com\/","sameAs":["https:\/\/www.facebook.com\/lagence-com\/","https:\/\/www.linkedin.com\/in\/novatis","https:\/\/twitter.com\/lagence-com"],"@id":"https:\/\/www.lagence-com.com\/#organization","name":"lagence com","logo":"{!! url('assets/upload/logo_laganceCom.png') !!}"}</script>
 
+    --}}
+    
     <link rel='stylesheet' id='gdlr-core-google-font-css' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=devanagari%2Clatin-ext%2Clatin%2Cvietnamese&#038;ver=4.9.8' type='text/css' media='all' />
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:200%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all">

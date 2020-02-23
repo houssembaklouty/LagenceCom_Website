@@ -83,7 +83,7 @@
                             <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-image-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-center-align">
-                                        <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px;"><img src="/assets/upload/service-1-2-400x270.jpg" width="619" height="418"  alt=""></div>
+                                        <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px;"><img src="/assets/upload/Accompagnement.jpg" width="619" height="418"  alt=""></div>
                                     </div>
                                 </div>
                             </div>

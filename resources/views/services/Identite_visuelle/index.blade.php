@@ -28,7 +28,7 @@
 
         <div class="gdlr-core-pbf-wrapper " style="padding: 105px 0px 70px 0px; margin-top: 70px;">
             <div class="gdlr-core-pbf-background-wrap">
-                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(/assets/upload/service-1-3.jpg);background-size: cover;background-position: center;" data-parallax-speed="0.2"></div>
+                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(/assets/upload/identite.jpg);background-size: cover;background-position: center; opacity: 0.50;" data-parallax-speed="0.2"></div>
             </div>
             <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                 <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
@@ -45,7 +45,7 @@
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 5px; text-align: center;">
                                         <div class="gdlr-core-text-box-item-content" style="font-size: 15px;">
-                                            <p>
+                                            <p style="color: #2d2d2d; font-weight: bold;">
                                             	« <a href="{{ route('root_path') }}">L’@gence Com</a> » pense, conceptualise et réalise l’essence graphique de votre
                                             	entreprise.
                                             </p>
@@ -62,7 +62,7 @@
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 5px; text-align: justify;">
                                         <div class="gdlr-core-text-box-item-content" style="font-size: 15px;">
-                                            <p>
+                                            <p style="color: #2d2d2d;">
                                             	Le logotype (ou logo) est la carte d’identité de votre entreprise. C’est un des
                                             	éléments fondateurs de votre communication. Associé aux codes graphiques, au
                                             	slogan et à tous les supports de communication, le logotype devient l’identité
@@ -81,7 +81,7 @@
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 5px; text-align: justify;">
                                         <div class="gdlr-core-text-box-item-content" style="font-size: 15px;">
-                                            <p>
+                                            <p style="color: #2d2d2d;">
                                             	Dans son ensemble, l’identité visuelle doit faire transparaître votre activité, vos
                                             	valeurs, vos prestations ou produits. C’est aussi un élément de différenciation qui
                                             	doit s’inscrire durablement dans l’esprit de votre cible et fédérer vos collaborateurs.
@@ -142,7 +142,7 @@
                                     <div class="gdlr-core-image-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-center-align" style="padding-bottom: 22px;">
                                         <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px;">
                                             <a href="{{ route('Identite_visuelle_Naming.index') }}">
-                                                <img src="/assets/upload/service-thumb-1-400x437.jpg" width="700" height="765" alt=""><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon fa fa-external-link gdlr-core-size-22"></i></span>
+                                                <img src="/assets/upload/Naming.jpg" width="700" height="765" alt=""><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon fa fa-external-link gdlr-core-size-22"></i></span>
                                             </a>
                                         </div>
                                     </div>
@@ -167,7 +167,7 @@
                                     <div class="gdlr-core-image-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-center-align" style="padding-bottom: 22px;">
                                         <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px;">
                                             <a href="{{ route('Identite_visuelle_Marketing_publicitaire.index') }}">
-                                                <img src="/assets/upload/service-thumbn-2-400x437.jpg" width="700" height="765" alt=""><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon fa fa-external-link gdlr-core-size-22"></i></span>
+                                                <img src="/assets/upload/Marketing Pub1.jpg" width="700" height="765" alt=""><span class="gdlr-core-image-overlay "><i class="gdlr-core-image-overlay-icon fa fa-external-link gdlr-core-size-22"></i></span>
                                             </a>
                                         </div>
                                     </div>

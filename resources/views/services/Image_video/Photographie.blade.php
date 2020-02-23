@@ -82,7 +82,7 @@
                             <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-image-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-center-align">
-                                        <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px;"><img src="/assets/upload/service-1-2-400x270.jpg" width="619" height="418"  alt=""></div>
+                                        <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px;"><img src="/assets/upload/photographie.jpg" width="619" height="418"  alt=""></div>
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +147,7 @@
                     <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-hide-in-mobile">
                         <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;" data-sync-height="service-screen-height">
                             <div class="gdlr-core-pbf-background-wrap">
-                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(/assets/upload/816KPMNUS2.jpg);background-size: cover;background-position: bottom left;" data-parallax-speed="0.2"></div>
+                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(/assets/upload/photo_corporate_portrait.jpg);background-size: cover;background-position: bottom left;" data-parallax-speed="0.2"></div>
                             </div>
                             <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content"></div>
                         </div>
@@ -158,7 +158,7 @@
                     <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first">
                         <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 250px 0px 250px 0px;" data-sync-height="video-bg-height" data-sync-height-center>
                             <div class="gdlr-core-pbf-background-wrap" style="background-color: #161616 ;">
-                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(https://cdn.goodlayers.com/seocrawler/demo2/wp-content/uploads/2017/06/shutterstock_531870244.jpg);opacity: 0.38;background-size: cover;background-position: center;" data-parallax-speed="0.1"></div>
+                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(/assets/upload/photo_produit.jpg);opacity: 0.38;background-size: cover;background-position: center;" data-parallax-speed="0.1"></div>
                             </div>
 
                         </div>

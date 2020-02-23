@@ -22,7 +22,7 @@ class FrontController extends Controller
 
 		$description = "L’@gence Com accompagne les professionnels & les entreprises dans leurs projets de communication globale : conseil, création, internet, marketing digital, photo & vidéo.";
 		
-		$keywords = "keywords1, keywords2, keywords3";
+		$keywords = "L’agence Com, Agence de conseil, création et communication Web,";
 
 	    return view('homepage/index', compact('objects', 'title', 'description', 'keywords'));
 	}	
